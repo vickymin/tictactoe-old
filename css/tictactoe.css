@@ -1,0 +1,83 @@
+
+body{
+  background-color:#fffccc;
+}
+
+h1{
+  font-family: 'Ostrich Sans', sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  color:#555;
+  margin:60px auto 10px 60px;
+}
+#container {
+  position: relative;
+  width:340px;
+  height:320px;
+  margin:50px auto;
+  padding-left:10px;
+  padding-top:20px;
+  border:2px solid #999;
+  background-color: #ffffaa;
+}
+#result {
+  position:absolute;
+  top:-2px;
+  right:-2px;
+  float:left;
+  width:340px;
+  height:320px;
+  padding-left:10px;
+  padding-top:20px;
+  border:2px solid #999;
+  background-color: rgba(100,100,100,0.9);
+}
+p {
+  text-align: center;
+  margin-top: 90px;
+  font-size: 70px;
+  font-weight: 400;
+  color: #fffccc;
+}
+#container a.cells {
+  display: block;
+  float:left;
+  width:80px;
+  height:80px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border:2px solid #999;
+  color:#777;
+  text-decoration: none;
+  font-size: 60px;
+  line-height:80px;
+  text-align: center;
+}
+#button{
+  width:340px;
+  height:320px;
+  margin:70px auto;
+}
+#button #newGame,#undo{
+  font-family: 'Ostrich Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  float:left;
+  width:65px;
+  height:15px;
+  margin-left: 43px;
+  margin-bottom: 20px;
+  background-color: #666;
+  color: white;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 4px;
+  cursor: pointer;
+  padding:10px 20px;
+}
+#button #newGame:hover,#undo:hover{
+  background-color: #333;
+  color: white;
+  box-shadow: 3px 3px 5px #555;
+}
