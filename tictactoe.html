@@ -7,6 +7,12 @@
 </head>
 <body>
   <h1>Let's Play Tic-Tac-Toe</h1>
+
+    <div id="button1">
+        <a class="button_l" onclick="onePlayer()">1<br>Player</a>
+        <a class="button_l" onclick="twoPlayer()">2<br>Player</a>
+    </div>
+
     <div id="container">
         <a href="javascript:;" class="cells" id="cell-0-0"></a>
         <a href="javascript:;" class="cells" id="cell-0-1"></a>
@@ -18,10 +24,10 @@
         <a href="javascript:;" class="cells" id="cell-2-1"></a>
         <a href="javascript:;" class="cells" id="cell-2-2"></a>
     </div>
-    <div id="button">
-        <a id="newGame" onclick="newGame()">RESTART</a>
-        <a id="undo">UNDO</a>
+    <div id="button2">
+        <a class="button_b" id="restart">RESTART</a>
+        <a class="button_b" id="undo">UNDO</a>
     </div>
-    <script src="tictactoe.js"></script>
+    <script src="tictactoe_ai.js"></script>
 </body>
 </html>
