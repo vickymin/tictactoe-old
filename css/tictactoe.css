@@ -1,51 +1,65 @@
+@media screen and (max-width:600px){
+  body{width:500px;}
+  #button1{float:left;margin:400px 0px auto -70px;}
+  #container{clear:both;}
+}
+@media screen and (min-width:600px){
+  #button1{float:left;margin:100px auto auto -70px;}
+}
 
 body{
-  background-color:#fffccc;
+  background:#fffccc;
 }
 
 @font-face {
 	font-family: 'Ostrich Sans';
 	src: url('ostrich-sans-regular.eot');
-	src: local('☺'), url('ostrich-regular.woff') format('woff'), url('ostrich-regular.ttf') format('truetype'), url('ostrich-regular.svg') format('svg');
+	src: local('☺'), url('ostrich-regular.ttf') format('truetype'), url('ostrich-regular.svg') format('svg');
 	font-weight: 400;
 	font-style: normal;
 }
 
 h1{
   font-family: 'Ostrich Sans', sans-serif;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 500;
   color:#555;
   margin:60px auto 10px 60px;
 }
+#button1{
+  float:left;
+}
+
+.button_l{
+  font-size:30px;
+  font-weight: 500;
+  font-family: 'Ostrich Sans', sans-serif;
+  display: block;
+  width:60px;
+  height:50px;
+  margin:20px;
+  margin-bottom:40px;
+  padding:10px 20px 15px 50px;
+  background-color:#666;
+  color:white;
+  text-align: center;
+  border:1px solid gray;
+  border-radius: 4px;
+  cursor:pointer;
+  transition:transform 0.3s;
+}
+.button_l:hover{
+  transform:translate3d(15px,0,0);
+}
 #container {
-  position: relative;
+  position:relative;
   width:340px;
   height:320px;
   margin:50px auto;
   padding-left:10px;
   padding-top:20px;
   border:2px solid #999;
-  background-color: #ffffaa;
-}
-#result {
-  position:absolute;
-  top:-2px;
-  right:-2px;
-  float:left;
-  width:340px;
-  height:320px;
-  padding-left:10px;
-  padding-top:20px;
-  border:2px solid #999;
-  background-color: rgba(100,100,100,0.9);
-}
-p {
-  text-align: center;
-  margin-top: 90px;
-  font-size: 70px;
-  font-weight: 400;
-  color: #fffccc;
+  background-color:#ffffaa;
 }
 #container a.cells {
   display: block;
@@ -61,30 +75,69 @@ p {
   line-height:80px;
   text-align: center;
 }
-#button{
+#mode{
+  position:absolute;
+  font-size:20px;
+  top:-2px;
+  right:-2px;
+  float:left;
+  width:340px;
+  height:320px;
+  padding-left:10px;
+  padding-top:20px;
+  border:2px solid #999;
+  background-color:rgba(100,100,100,0.9);
+}
+#mode p{
+  text-align: center;
+  margin-top: 70px;
+  font-size: 70px;
+  font-weight: 400;
+  color: #fffccc;
+}
+#result {
+  position:absolute;
+  top:-2px;
+  right:-2px;
+  float:left;
+  width:340px;
+  height:320px;
+  padding-left:10px;
+  padding-top:20px;
+  border:2px solid #999;
+  background-color:rgba(100,100,100,0.9);
+}
+#result p{
+  text-align: center;
+  margin-top: 90px;
+  font-size: 70px;
+  font-weight: 400;
+  color: #fffccc;
+}
+#button2{
   width:340px;
   height:320px;
   margin:70px auto;
 }
-#button #newGame,#undo{
+.button_b{
   font-family: 'Ostrich Sans', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   display: block;
   float:left;
   width:65px;
-  height:15px;
-  margin-left: 43px;
-  margin-bottom: 20px;
-  background-color: #666;
-  color: white;
-  text-align: center;
-  border: 1px solid gray;
-  border-radius: 4px;
-  cursor: pointer;
+  height:20px;
+  margin-left:43px;
+  margin-bottom:20px;
+  background-color:#666;
+  color:white;
+  text-align:center;
+  border:1px solid gray;
+  border-radius:4px;
+  cursor:pointer;
   padding:10px 20px;
 }
-#button #newGame:hover,#undo:hover{
+.button_b:hover{
   background-color: #333;
   color: white;
   box-shadow: 3px 3px 5px #555;
