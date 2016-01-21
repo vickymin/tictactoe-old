@@ -1,10 +1,5 @@
 @media screen and (max-width:600px){
-  body{width:500px;}
-  #button1{float:left;margin:400px 0px auto -70px;}
-  #container{clear:both;}
-}
-@media screen and (min-width:600px){
-  #button1{float:left;margin:100px auto auto -70px;}
+  body{width:600px;}
 }
 
 body{
@@ -27,10 +22,12 @@ h1{
   margin:60px auto 10px 60px;
 }
 #button1{
-  float:left;
+  position: fixed;
+  top: 220px;
+  left: -62px;;
 }
 
-.button_l{
+.button_m{
   font-size:30px;
   font-weight: 500;
   font-family: 'Ostrich Sans', sans-serif;
@@ -48,10 +45,10 @@ h1{
   cursor:pointer;
   transition:transform 0.3s;
 }
-.button_l:hover{
-  transform:translate3d(15px,0,0);
+.button_m:hover{
+  transform:translate3d(9px,0,0);
 }
-#container {
+#container{
   position:relative;
   width:340px;
   height:320px;
