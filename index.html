@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="css/tictactoe.css">
+</head>
+<body>
+  <h1>Let's Play Tic-Tac-Toe</h1>
+
+    <div id="button1">
+        <a class="button_m" onclick="onePlayer()">1<br>Player</a>
+        <a class="button_m" onclick="twoPlayer()">2<br>Player</a>
+    </div>
+
+    <div id="container">
+        <a href="javascript:;" class="cells" id="cell-0-0"></a>
+        <a href="javascript:;" class="cells" id="cell-0-1"></a>
+        <a href="javascript:;" class="cells" id="cell-0-2"></a>
+        <a href="javascript:;" class="cells" id="cell-1-0"></a>
+        <a href="javascript:;" class="cells" id="cell-1-1"></a>
+        <a href="javascript:;" class="cells" id="cell-1-2"></a>
+        <a href="javascript:;" class="cells" id="cell-2-0"></a>
+        <a href="javascript:;" class="cells" id="cell-2-1"></a>
+        <a href="javascript:;" class="cells" id="cell-2-2"></a>
+    </div>
+    <div id="button2">
+        <a class="button_b" id="restart">RESTART</a>
+        <a class="button_b" id="undo">UNDO</a>
+    </div>
+    <script src="tictactoe.js"></script>
+</body>
+</html>
