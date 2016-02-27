@@ -2,7 +2,7 @@ window.onload = function(){
   var modeDiv = document.createElement("div");
   modeDiv.setAttribute("id","mode");
   var modePara = document.createElement("p");
-  var modeText = document.createTextNode("Choose ⬅️ Mode")
+  var modeText = document.createTextNode("Choose Mode")
   modePara.appendChild(modeText);
   modeDiv.appendChild(modePara);
   container.appendChild(modeDiv);
@@ -111,6 +111,21 @@ var evenPlay = function(){
 };
 
 //显示结果
+var checkResult = function(x, y){
+  if (checkWin(x, y)){
+    if (flag == 1){
+      resultText = document.createTextNode("CROSS WIN!");
+    }else{
+      resultText = document.createTextNode("CIRCLE WIN!");
+    }
+    result();
+  }else{
+    if (evenPlay()){
+      resultText = document.createTextNode("BREAK EVEN!");
+      result();
+    }
+  }
+}
 var result = function(){
   var resultDiv = document.createElement("div");
   resultDiv.setAttribute("id","result");
@@ -171,22 +186,6 @@ var undoTwo = function(x,y){
       model[x][y] = 0;
       cells[x][y].text = '';
       flag = (-1) * flag;
-    }
-  }
-}
-
-var checkResult = function(x, y){
-  if (checkWin(x, y)){
-    if (flag == 1){
-      resultText = document.createTextNode("CROSS WIN!");
-    }else{
-      resultText = document.createTextNode("CIRCLE WIN!");
-    }
-    result();
-  }else{
-    if (evenPlay()){
-      resultText = document.createTextNode("BREAK EVEN!");
-      result();
     }
   }
 }

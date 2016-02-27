@@ -1,9 +1,7 @@
-@media screen and (max-width:600px){
-  body{width:600px;}
-}
 
 body{
-  background:#fffccc;
+  background: #fffccc;
+  height: 500px;
 }
 
 @font-face {
@@ -18,8 +16,8 @@ h1{
   font-family: 'Ostrich Sans', sans-serif;
   font-size: 50px;
   font-weight: 500;
-  color:#555;
-  margin:60px auto 10px 60px;
+  color: #555;
+  margin: 60px auto 10px 60px;
 }
 #button1{
   position: fixed;
@@ -28,62 +26,59 @@ h1{
 }
 
 .button_m{
-  font-size:30px;
+  font-size: 30px;
   font-weight: 500;
   font-family: 'Ostrich Sans', sans-serif;
   display: block;
-  width:60px;
-  height:50px;
-  margin:20px;
-  margin-bottom:40px;
-  padding:10px 20px 15px 50px;
-  background-color:#666;
-  color:white;
+  width: 60px;
+  height: 50px;
+  margin: 20px;
+  margin-bottom: 40px;
+  padding: 10px 20px 15px 50px;
+  background-color: #666;
+  color: white;
   text-align: center;
-  border:1px solid gray;
+  border: 1px solid gray;
   border-radius: 4px;
-  cursor:pointer;
-  transition:transform 0.3s;
-}
-.button_m:hover{
-  transform:translate3d(9px,0,0);
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 #container{
-  position:relative;
-  width:340px;
-  height:320px;
-  margin:50px auto;
-  padding-left:10px;
-  padding-top:20px;
-  border:2px solid #999;
-  background-color:#ffffaa;
+  position: relative;
+  width: 340px;
+  height: 320px;
+  margin: 50px auto;
+  padding-left: 10px;
+  padding-top: 20px;
+  border: 2px solid #999;
+  background-color: #ffffaa;
 }
 #container a.cells {
   display: block;
-  float:left;
-  width:80px;
-  height:80px;
+  float: left;
+  width: 80px;
+  height: 80px;
   margin-left: 20px;
   margin-bottom: 20px;
-  border:2px solid #999;
-  color:#777;
+  border: 2px solid #999;
+  color: #777;
   text-decoration: none;
   font-size: 60px;
-  line-height:80px;
+  line-height: 80px;
   text-align: center;
 }
 #mode{
-  position:absolute;
-  font-size:20px;
-  top:-2px;
-  right:-2px;
-  float:left;
-  width:340px;
-  height:320px;
-  padding-left:10px;
-  padding-top:20px;
-  border:2px solid #999;
-  background-color:rgba(100,100,100,0.9);
+  position: absolute;
+  font-size: 20px;
+  top: -2px;
+  right: -2px;
+  float: left;
+  width: 340px;
+  height: 320px;
+  padding-left: 10px;
+  padding-top: 20px;
+  border: 2px solid #999;
+  background-color: rgba(100,100,100,0.9);
 }
 #mode p{
   text-align: center;
@@ -93,16 +88,16 @@ h1{
   color: #fffccc;
 }
 #result {
-  position:absolute;
-  top:-2px;
-  right:-2px;
-  float:left;
-  width:340px;
-  height:320px;
-  padding-left:10px;
-  padding-top:20px;
-  border:2px solid #999;
-  background-color:rgba(100,100,100,0.9);
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  float: left;
+  width: 340px;
+  height: 320px;
+  padding-left: 10px;
+  padding-top: 20px;
+  border: 2px solid #999;
+  background-color: rgba(100,100,100,0.9);
 }
 #result p{
   text-align: center;
@@ -112,30 +107,71 @@ h1{
   color: #fffccc;
 }
 #button2{
-  width:340px;
-  height:320px;
-  margin:70px auto;
+  width: 340px;
+  margin: 70px auto;
 }
 .button_b{
   font-family: 'Ostrich Sans', sans-serif;
   font-size: 25px;
   font-weight: 500;
   display: block;
-  float:left;
-  width:65px;
-  height:20px;
-  margin-left:43px;
-  margin-bottom:20px;
-  background-color:#666;
-  color:white;
-  text-align:center;
-  border:1px solid gray;
-  border-radius:4px;
-  cursor:pointer;
-  padding:10px 20px;
-}
-.button_b:hover{
-  background-color: #333;
+  float: left;
+  width: 65px;
+  height: 20px;
+  margin-left: 43px;
+  margin-bottom: 20px;
+  background-color: #666;
   color: white;
-  box-shadow: 3px 3px 5px #555;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+
+  }
+  h1 {
+    font-size: 40px;
+    width: 280px;
+    margin: 30px auto 10px auto;
+  }
+  #button1 {
+    position: relative;
+    top: 0px;
+    left: auto;
+    width: 340px;
+    margin: 20px auto;
+  }
+  .button_m{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    width: 65px;
+    height: 20px;
+    margin: 0 0 20px 43px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  #container {
+    position: relative;
+    margin: 10px auto;
+  }
+  #button2 {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .button_m:hover{
+    transform: translate3d(9px,0,0);
+  }
+  .button_b:hover{
+    background-color: #333;
+    color: white;
+    box-shadow: 3px 3px 5px #555;
+  }
 }
