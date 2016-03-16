@@ -1,9 +1,8 @@
-
+/* overall */
 body{
   background: #fffccc;
   height: 500px;
 }
-
 @font-face {
 	font-family: 'Ostrich Sans';
 	src: url('ostrich-sans-regular.eot');
@@ -11,7 +10,6 @@ body{
 	font-weight: 400;
 	font-style: normal;
 }
-
 h1{
   font-family: 'Ostrich Sans', sans-serif;
   font-size: 50px;
@@ -19,12 +17,13 @@ h1{
   color: #555;
   margin: 60px auto 10px 60px;
 }
+
+/* buttons */
 #button1{
   position: fixed;
   top: 220px;
   left: -62px;;
 }
-
 .button_m{
   font-size: 30px;
   font-weight: 500;
@@ -36,13 +35,37 @@ h1{
   margin-bottom: 40px;
   padding: 10px 20px 15px 50px;
   background-color: #666;
-  color: white;
+  color: #fff;
   text-align: center;
   border: 1px solid gray;
   border-radius: 4px;
   cursor: pointer;
   transition: transform 0.3s;
 }
+#button2{
+  width: 340px;
+  margin: 70px auto;
+}
+.button_b{
+  font-family: 'Ostrich Sans', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  display: block;
+  float: left;
+  width: 65px;
+  height: 20px;
+  margin-left: 43px;
+  margin-bottom: 20px;
+  background-color: #666;
+  color: white;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+/* container */
 #container{
   position: relative;
   width: 340px;
@@ -105,28 +128,6 @@ h1{
   font-size: 70px;
   font-weight: 400;
   color: #fffccc;
-}
-#button2{
-  width: 340px;
-  margin: 70px auto;
-}
-.button_b{
-  font-family: 'Ostrich Sans', sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  display: block;
-  float: left;
-  width: 65px;
-  height: 20px;
-  margin-left: 43px;
-  margin-bottom: 20px;
-  background-color: #666;
-  color: white;
-  text-align: center;
-  border: 1px solid gray;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 10px 20px;
 }
 
 @media screen and (max-width: 600px) {
