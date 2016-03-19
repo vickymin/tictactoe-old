@@ -131,9 +131,6 @@ h1{
 }
 
 @media screen and (max-width: 600px) {
-  body {
-
-  }
   h1 {
     font-size: 40px;
     width: 280px;
