@@ -103,9 +103,10 @@ h1{
   border: 2px solid #999;
   background-color: rgba(100,100,100,0.9);
 }
-#mode p{
+#mode p {
+  position: relative;
+  top: -20px;
   text-align: center;
-  margin-top: 70px;
   font-size: 70px;
   font-weight: 400;
   color: #fffccc;
@@ -122,9 +123,10 @@ h1{
   border: 2px solid #999;
   background-color: rgba(100,100,100,0.9);
 }
-#result p{
+#result p {
+  position: relative;
+  top: -20px;
   text-align: center;
-  margin-top: 90px;
   font-size: 70px;
   font-weight: 400;
   color: #fffccc;
